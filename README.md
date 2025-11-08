@@ -62,12 +62,12 @@ npm or yarn
 ## Installation
 Clone the repository
 
-bash
-git clone https://github.com/your-username/letschat.git
+```bash
+git clone https://github.com/PLP-MERN-Stack-Development/real-time-communication-with-socket-io-Jenny-light.git
 cd letschat
 Backend Setup
 
-bash
+
 cd backend
 npm install
 
@@ -76,7 +76,7 @@ cp .env.example .env
 # Edit .env with your configurations
 Frontend Setup
 
-bash
+
 cd ../frontend
 npm install
 
@@ -99,7 +99,7 @@ REACT_APP_SERVER_URL=http://localhost:5000
 Running the Application
 Start MongoDB (if using local)
 
-bash
+
 # Windows
 net start MongoDB
 
@@ -107,20 +107,21 @@ net start MongoDB
 mongod
 Start Backend Server
 
-bash
+
 cd backend
 npm run dev
 Server will run on http://localhost:5000
 
 Start Frontend Development Server
 
-bash
+
 cd frontend
 npm start
 Client will run on http://localhost:3000
+```
 
 🗂️ Project Structure
-text
+```bash
 letschat/
 ├── backend/
 │   ├── models/          # MongoDB models
@@ -154,6 +155,7 @@ letschat/
 │       │   └── SocketContext.js
 │       └── App.js       # Main App component
 └── README.md
+```
 
 ## 🎯 API Endpoints
 Authentication
