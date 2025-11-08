@@ -47,7 +47,8 @@ JWT - Authentication
 bcryptjs - Password hashing
 
 ## 📸 Screenshots
-(Add your screenshots here)
+<img width="1431" height="852" alt="Screenshot 2025-11-08 201748" src="https://github.com/user-attachments/assets/eab1ae63-ba7c-4428-aeb4-a5a656935512" />
+
 
 ## 🏁 Quick Start
 Prerequisites
