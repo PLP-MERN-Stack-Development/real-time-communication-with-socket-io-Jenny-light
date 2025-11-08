@@ -1,8 +1,6 @@
 # LetsChat 💜
 A real-time chat application built with the MERN stack and Socket.io, featuring live messaging, notifications, and online status updates.
 
-https://img.shields.io/badge/LetsChat-Real%2520Time%2520Chat-purple?style=for-the-badge&logo=chat&logoColor=white
-https://img.shields.io/badge/MERN-Stack-green?style=for-the-badge&logo=mongodb&logoColor=white
 
 ## 🚀 Features
 
@@ -65,8 +63,8 @@ Clone the repository
 ```bash
 git clone https://github.com/PLP-MERN-Stack-Development/real-time-communication-with-socket-io-Jenny-light.git
 cd letschat
-Backend Setup
 
+Backend Setup
 
 cd backend
 npm install
@@ -74,8 +72,8 @@ npm install
 # Create environment file
 cp .env.example .env
 # Edit .env with your configurations
-Frontend Setup
 
+Frontend Setup
 
 cd ../frontend
 npm install
@@ -264,7 +262,7 @@ Check the issues page
 
 Create a new issue with your problem
 
-Email: your-email@example.com
+Email: jennylightomoregie@gmail.com
 
 ## 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
