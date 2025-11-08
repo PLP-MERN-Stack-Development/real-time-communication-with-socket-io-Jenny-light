@@ -1,43 +1,68 @@
 import React from 'react';
 
-const Logo = ({ size = 40, className = '' }) => {
+const Logo = ({ showText = true, size = 'medium', className = '' }) => {
+  const sizes = {
+    small: { icon: 24, text: '1rem' },
+    medium: { icon: 32, text: '1.5rem' },
+    large: { icon: 48, text: '2rem' }
+  };
+
+  const { icon, text } = sizes[size];
+
   return (
-    <svg 
-      width={size} 
-      height={size} 
-      viewBox="0 0 100 100" 
-      className={className}
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      {/* Background Circle */}
-      <circle cx="50" cy="50" r="45" fill="#8B5CF6" />
+    <div className={`logo ${className}`} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+      {/* Icon */}
+      <div style={{
+        width: icon,
+        height: icon,
+        backgroundColor: '#8B5CF6',
+        borderRadius: '50%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        position: 'relative'
+      }}>
+        <div style={{
+          width: icon * 0.6,
+          height: icon * 0.4,
+          backgroundColor: 'white',
+          borderRadius: '25%',
+          position: 'relative'
+        }}>
+          {/* Wave lines */}
+          <div style={{
+            position: 'absolute',
+            top: '30%',
+            left: '20%',
+            right: '20%',
+            height: '2px',
+            backgroundColor: '#8B5CF6',
+            borderRadius: '1px'
+          }}></div>
+          <div style={{
+            position: 'absolute',
+            top: '60%',
+            left: '30%',
+            right: '30%',
+            height: '2px',
+            backgroundColor: '#8B5CF6',
+            borderRadius: '1px'
+          }}></div>
+        </div>
+      </div>
       
-      {/* Speech Bubble Shape */}
-      <path 
-        d="M30,30 Q50,20 70,30 Q80,40 70,50 L50,65 L30,50 Q20,40 30,30 Z" 
-        fill="white" 
-        opacity="0.9"
-      />
-      
-      {/* Wave inside speech bubble */}
-      <path 
-        d="M35,40 Q45,35 55,45 Q65,55 65,45" 
-        fill="none" 
-        stroke="#8B5CF6" 
-        strokeWidth="3"
-        strokeLinecap="round"
-      />
-      <path 
-        d="M40,50 Q50,45 60,55" 
-        fill="none" 
-        stroke="#8B5CF6" 
-        strokeWidth="3"
-        strokeLinecap="round"
-      />
-      
-      {/* Sparkle/dot */}
-      <circle cx="60" cy="35" r="3" fill="#10B981" />
-    </svg>
+      {/* Text */}
+      {showText && (
+        <span style={{
+          fontSize: text,
+          fontWeight: 'bold',
+          color: '#8B5CF6',
+          fontFamily: 'Arial, sans-serif'
+        }}>
+          LetsChat
+        </span>
+      )}
+    </div>
   );
 };
 

@@ -5,6 +5,9 @@ import { useSocket } from '../context/SocketContext';
 import UserList from '../components/UserList';
 import MessageList from '../components/MessageList';
 import MessageInput from '../components/MessageInput';
+import Logo from '../components/Logo'; 
+
+
 
 const Chat = () => {
   const [users, setUsers] = useState([]);
